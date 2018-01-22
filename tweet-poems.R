@@ -29,7 +29,7 @@ usertweets <- gsub('\\p{So}|\\p{Cn}', '', usertweets, perl = TRUE) # remove emoj
 
 words <- unlist(strsplit(usertweets, ' '))
 
-words <- str_to_lower(words)
+words <- stringr::str_to_lower(words)
 
 
 poem_fit <- markovchainFit(words, method = "map") # Bayesian method
