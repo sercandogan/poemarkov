@@ -17,7 +17,7 @@ then you can run your app:
 runApp('app')
 ```
 
-![Screenshot](http://www.github.com/sercandogan/peomarkov/screenshot1.png)
+![Screenshot](https://github.com/sercandogan/poemarkov/blob/master/screenshot1.png)
 
 ### Deployment
 
