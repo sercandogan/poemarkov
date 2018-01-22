@@ -17,6 +17,8 @@ then you can run your app:
 runApp('app')
 ```
 
+![Screenshot](http://www.github.com/sercandogan/peomarkov/screenshot1.png)
+
 ### Deployment
 
 I've deployed as shiny app on shinyapps.io : https://sercandogan.shinyapps.io/poemarkov/
