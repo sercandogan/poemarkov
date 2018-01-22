@@ -3,7 +3,7 @@ set.seed(21012012)
 library(shiny)
 library(twitteR)
 library(markovchain)
-# for shiny
+# for shinyapps.io
 library(ROAuth)
 library(httr)
 library(httpuv)

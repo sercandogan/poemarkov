@@ -15,7 +15,7 @@ shinyUI(fluidPage(
        
        textInput("username", "Username:"),
        
-       sliderInput("nrow","Number of row", min = 1, max = 20, value = 7),
+       sliderInput("nrow","Number of rows", min = 1, max = 20, value = 7),
        
        actionButton("generate", "Generate"),
        
