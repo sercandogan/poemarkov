@@ -4,13 +4,10 @@ library(markovchain)
 
 consumer_key <- ""
 consumer_secret <- ""
-access_token = ""
-access_token_secret = ""
+
 
 setup_twitter_oauth(consumer_key = consumer_key,
-                    consumer_secret = consumer_secret,
-                    access_token = access_token, 
-                    access_secret = access_token_secret)
+                    consumer_secret = consumer_secret)
 
 usertweets <- userTimeline("sergiostats", n = 250) # my username
 
@@ -36,10 +33,11 @@ poem_fit <- markovchainFit(words, method = "map") # Bayesian method
 
 poem <- c()
 for(i in 1:12){
-  n <- sample(2:9,1)
+  n <- sample(4:9,1)
   poem <- c(poem,paste(markovchainSequence(n=n, markovchain=poem_fit$estimate), collapse=' '))
 }
-poem
+
+cat(paste(poem, collapse = "\n"))
 
 
 
